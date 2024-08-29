@@ -1,0 +1,17 @@
+<mat-toolbar color="primary" class="toolbar">
+  <span class="app-title">Mi Aplicación</span>
+  <span class="spacer"></span>
+  <button mat-button routerLink="/posts" aria-label="Lista de Posts">
+    <mat-icon>post_add</mat-icon>
+    Lista de Posts
+  </button>
+  <button mat-button routerLink="/users" aria-label="Lista de Usuarios">
+    <mat-icon>group</mat-icon>
+    Lista de Usuarios
+  </button>
+</mat-toolbar>
+
+<!-- Contenido del componente -->
+<div class="content">
+  <router-outlet></router-outlet>
+</div>

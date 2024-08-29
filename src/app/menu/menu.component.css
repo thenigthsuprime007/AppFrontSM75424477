@@ -1,0 +1,53 @@
+/* Estilo general para la barra de herramientas */
+.toolbar {
+  padding: 0 32px; /* Espaciado adicional en los laterales */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+  background: linear-gradient(90deg, #1e88e5, #42a5f5); /* Degradado de color */
+}
+
+/* Título de la aplicación */
+.app-title {
+  font-size: 1.75rem; /* Tamaño de fuente más grande */
+  font-weight: 700; /* Título en negrita */
+  letter-spacing: 0.07em; /* Espaciado entre letras */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  color: #ffffff; /* Texto blanco */
+  margin-right: 20px; /* Espacio a la derecha del título */
+}
+
+/* Espaciador para alinear los elementos a la derecha */
+.spacer {
+  flex: 1 1 auto;
+}
+
+/* Botones en la barra de herramientas */
+mat-toolbar button {
+  font-size: 1rem; /* Tamaño de fuente más grande */
+  font-weight: 600; /* Texto del botón en negrita */
+  color: #ffffff; /* Texto en blanco */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave para el hover */
+  margin-left: 16px; /* Espacio entre los botones */
+}
+
+mat-toolbar button:hover {
+  background-color: rgba(255, 255, 255, 0.15); /* Fondo claro al pasar el ratón */
+  transform: scale(1.05); /* Ligeramente más grande al hacer hover */
+  border-radius: 6px; /* Bordes redondeados en hover */
+}
+
+/* Iconos en los botones */
+mat-icon {
+  margin-right: 8px; /* Espacio entre el icono y el texto */
+  font-size: 1.4rem; /* Iconos más grandes */
+  vertical-align: middle; /* Alinear verticalmente el icono con el texto */
+}
+
+/* Estilo para el contenido del componente */
+.content {
+  padding: 24px; /* Espaciado alrededor del contenido */
+  background-color: #f9f9f9; /* Fondo claro para el contenido */
+  min-height: calc(100vh - 64px); /* Altura mínima para cubrir la pantalla menos la barra de herramientas */
+  border-radius: 8px; /* Bordes redondeados para el contenido */
+  margin: 16px; /* Márgenes alrededor del contenido */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Sombra sutil para el contenido */
+}

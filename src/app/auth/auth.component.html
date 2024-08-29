@@ -1,1 +1,17 @@
-<p>auth works!</p>
+<div class="auth-container">
+    <form [formGroup]="authForm" (ngSubmit)="onSubmit()" class="auth-form">
+      <h2>Iniciar Sesión</h2>
+      <div class="form-group">
+        <label for="studentCode">Código de Alumno:</label>
+        <input id="studentCode" formControlName="studentCode" type="text" class="form-control" placeholder="SM75424477" required />
+      </div>
+      
+      <div class="form-group">
+        <label for="password">Contraseña:</label>
+        <input id="password" formControlName="password" type="password" class="form-control" placeholder="22101994" required />
+      </div>
+      
+      <button type="submit" class="submit-btn" [disabled]="authForm.invalid">Iniciar Sesión</button>
+    </form>
+  </div>
+  

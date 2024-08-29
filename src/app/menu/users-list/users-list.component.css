@@ -1,0 +1,69 @@
+/* Estilo general para la tarjeta */
+mat-card {
+    background-color: #f5f5f5; /* Fondo claro para la tarjeta */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 16px;
+  }
+  
+  /* Título de la tarjeta */
+  mat-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3f51b5; /* Color principal */
+    margin-bottom: 16px;
+  }
+  
+  /* Tabla personalizada */
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse; /* Bordes colapsados */
+  }
+  
+  .custom-table th {
+    background-color: #3f51b5; /* Fondo azul oscuro para encabezados */
+    color: #ffffff; /* Texto blanco */
+    text-align: left;
+    padding: 12px 16px;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  .custom-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #eeeeee; /* Línea divisoria clara */
+    font-size: 0.875rem;
+  }
+  
+  .custom-table tr:hover {
+    background-color: #e0e0e0; /* Fondo gris claro al pasar el ratón */
+  }
+  
+  /* Bordes de las filas de la tabla */
+  .custom-table tr:last-child td {
+    border-bottom: none; /* Sin borde inferior en la última fila */
+  }
+  
+  /* Aumentar la sombra de la tabla */
+  .mat-elevation-z8 {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+  }
+  
+  /* Ajustes en la celda de encabezado */
+  .mat-header-cell {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  /* Ajustes en las celdas */
+  .mat-cell {
+    font-size: 0.875rem;
+    color: #212121;
+  }
+  
+  /* Estilos para el contenido */
+  mat-card-content {
+    padding: 0;
+  }
+  
